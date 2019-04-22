@@ -5,61 +5,8 @@ resources:
   source:
     uri: https://github.com/colinedwardwood/film-production.git
     branch: master
-    private_key: |
-      -----BEGIN RSA PRIVATE KEY-----
-      Proc-Type: 4,ENCRYPTED
-      DEK-Info: AES-128-CBC,1CB8D5207863C8991D4F11D85C7216E9
-
-      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
-      -----END RSA PRIVATE KEY-----
+    username: woodce@gmail.com
+    password: LjPH08n80GH
 
 jobs:
 - name: remove
@@ -67,11 +14,4 @@ jobs:
   plan:
   - get: scripts
   - task: exec-scripts
-    config:
-      platform: linux
-      image_resource:
-        type: docker-image
-        source: {repository: busybox}
-      run:
-        path: ls
-        args: [-al]
+    file: scripts/pipeline/tasks/ls.yml
