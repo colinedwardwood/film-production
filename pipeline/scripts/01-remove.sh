@@ -1,6 +1,5 @@
 #!/bin/bash
-
-ls
+echo Hello World
 
 # printf "Remove all non-films, non-subtitles."
 
