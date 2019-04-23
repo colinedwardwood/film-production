@@ -4,10 +4,16 @@ resources:
   type: time
   source:
     interval: 1m
-
+- name: tasks-scripts
+  type: git
+  source:
+    uri: https://github.com/colinedwardwood/film-production.git
+    branch: master
 jobs:
 - name: echo-job
   public: true
   plan:
+  - get: my-timer
+  - get: tasks-scripts
   - task: echo-task
     file: tasks-scripts/pipeline/tasks/echo-hello-world.yml
