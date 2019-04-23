@@ -1,17 +1,15 @@
 ---
 resources:
-- name: scripts
+- name: tasks
   type: git
   source:
     uri: https://github.com/colinedwardwood/film-production.git
-    #branch: master
-    username: woodce@gmail.com
-    password: LjPH08n80GH
+    branch: master
 
 jobs:
-- name: remove
+- name: ls
   public: true
   plan:
-  - get: scripts
-  - task: exec-scripts
-    file: scripts/pipeline/tasks/ls.yml
+  - get: task
+  - task: exec-ls
+    file: tasks/pipeline/tasks/ls.yml
