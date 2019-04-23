@@ -7,6 +7,7 @@ image_resource:
 
 inputs:
 - name: tasks-scripts
+  path: scripts/
 
 run:
-  path: tasks-scripts/pipeline/scripts/01-remove.sh
+  path: scripts/pipeline/scripts/01-remove.sh

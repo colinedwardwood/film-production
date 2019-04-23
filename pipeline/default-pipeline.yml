@@ -11,5 +11,5 @@ jobs:
   public: true
   plan:
   - get: tasks-scripts
-  - task: exec-ls
+  - task: remove
     file: tasks-scripts/pipeline/tasks/remove.yml
