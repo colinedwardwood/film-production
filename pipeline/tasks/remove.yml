@@ -9,4 +9,4 @@ inputs:
 - name: tasks-scripts
 
 run:
-  path: tasks/pipeline/scripts/01-remove.sh
+  path: tasks-scripts/pipeline/scripts/01-remove.sh

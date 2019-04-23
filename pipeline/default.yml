@@ -12,4 +12,4 @@ jobs:
   plan:
   - get: tasks-scripts
   - task: exec-ls
-    file: tasks/pipeline/tasks/remove.yml
+    file: tasks-scripts/pipeline/tasks/remove.yml
