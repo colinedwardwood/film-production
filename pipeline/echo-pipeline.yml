@@ -1,0 +1,13 @@
+---
+resources:
+- name: my-timer
+  type: time
+  source:
+    interval: 1m
+
+jobs:
+- name: echo-job
+  public: true
+  plan:
+  - task: echo-task
+    file: tasks-scripts/pipeline/tasks/echo-hello-world.yml
