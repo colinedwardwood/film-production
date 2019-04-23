@@ -1,15 +1,15 @@
 ---
 resources:
-- name: tasks
+- name: tasks-scripts
   type: git
   source:
     uri: https://github.com/colinedwardwood/film-production.git
     branch: master
 
 jobs:
-- name: ls
+- name: remove
   public: true
   plan:
-  - get: tasks
+  - get: tasks-scripts
   - task: exec-ls
-    file: tasks/pipeline/tasks/ls.yml
+    file: tasks/pipeline/tasks/remove.yml
