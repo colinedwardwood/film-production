@@ -10,6 +10,6 @@ jobs:
 - name: ls
   public: true
   plan:
-  - get: task
+  - get: tasks
   - task: exec-ls
     file: tasks/pipeline/tasks/ls.yml
